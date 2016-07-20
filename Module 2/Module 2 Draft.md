@@ -8,69 +8,80 @@
 
 Hello again fellow Space Fairer, and welcome to Module 2. 
 	
-It's time to explore the Grove Pi and find out what it's capable of when attached to the Raspberry Pi. With their powers combined, we will be able to read and record all kinds of environmental information and learn what exactly happens when we travel to the top of earth's atmosphere. But first, we must build our 'Telemetry' system by using a combination of sensor units and code. 
+It's time to explore the Grove Pi and find out what it's capable of when attached to the Raspberry Pi. With their powers combined, we will be able to read and record all kinds of environmental information and learn from that data what actually happens when we travel up into the earth's atmosphere. But first, we must build our <b>Telemetry System</b> by using a combination of sensor units and programming code. 
 
-![MacDown logo](placeholder-690x360.png)
+![MacDown logo](CompleteTelemetryUnit1.JPG)
 
 ## What is it like to stand at the edge of space?
 
 
-Your balloon's telemetry unit, or as we like to call it, Space Computer, will allow you and your team to read atmospheric conditions at the very top of the earth's atmosphere. As the balloon rises, it will leave the earth below and enter a different kind of place, very different than where you are standing right now.
+Your balloon's <b>Telemetry System</b>, or as we like to call it, the goMake <i>Space Computer</i>, will allow you and your team to read atmospheric conditions at the very top of the earth's atmosphere. As the balloon rises, it will leave the earth below and enter a new and unfamiliar place, very different than where you are standing right now.
 
 At about 100,000 feet, or 19 miles above the earth, interesting things start to happen. Have you ever heard of the Stratosphere? That's where we're going with our HAB. In the Stratosphere, there is very air to breath, atmospheric pressure (that which causes your ears to pop when you go up to higher altitudes) is far far lower than on earth and it's very, very cold! Also, it's where the Ozone layer exists, which protects us from harmful cosmic rays.
 
-Do you think you could surive up in the Stratosphere without a space suit? 
+<b>Do you think you could surive up in the Stratosphere without a space suit?</b>
 
-![MacDown logo](placeholder-690x360.png)
 
 ## Things You Will Need
+Before we get started, let's account for the pieces of equipment that we'll need to build our Space Computer. 
 
 ### Parts
-* Raspberry Pi & Grove Pi units
+* <b>Raspberry Pi & Grove Pi units
 
-> (Image)
+> ![imgage](RPiconnectedtoGrovePi.JPG)
 
-* GPS Sensor & Antenna 
+* GPS Sensor & Antenna
 
-> (Image)
+> ![MacDown logo](GPSSensorwithAntenna.JPG)
 
 * Temperature and Humidity Sensor 
 
-> (Image)
+> ![MacDown logo](TemperatureandHumiditySensor.JPG)
 
 * Sound Sensor 
 
-> (Image)
+> ![MacDown logo](SoundSensor.JPG)
 
 * LCD RGB Display 
 
-> (Image)
+> ![MacDown logo](LCDRGBScreen.JPG)
+
+* Sattelite Modem</b>
+
+> ![MacDown logo](SatModem.JPG)
 
 
-### Tools
-This module is fairly straight forward, you won't be needing any fancy tools to make this telemetry unit. However, here are a few additional items you will need:
-
-* Monitor with HDMI in to display the RPi
-
-* HDMI Cable
+### Additional Tools
+This module is fairly straight forward, you won't be needing any super advanced tools to make this telemetry unit function. However, here are a few additional items you <i>will</i> need to build and test the Telemetry System:
 
 
+* <b>Monitor with HDMI-in to display the Raspberry Pi OS</b>
 
-## Let's get started!
+* <b>HDMI Cable</b>
 
-### 1. Let's turn on the RPi & Grove Pi and get ourselves set up.
-Make sure that your RPi is connected to a monitor via the HDMI cable, and that the keyboard dongle is connect. Plug it in and it will start on its own.
+* <b>Keyboard & its wireless dongle, provided by <i>goMake</i></b>
 
 
-![MacDown logo](placeholder-400x350.png) 
-> Caption: Caption Picture of RPi connected 
+## Let's build us a Space Computer!
+
+### Step 1. Activating the RPi & Grove Pi and get ourselves set up.
+Make sure that your RPi is connected to a monitor via the HDMI cable, and that the keyboard dongle is plugged into one of the RPi's USB inputs. 
+
+Now that we have our Keyboard and HDMI plugged in, turn on your monitor and plug in the RPi's power cord and <i>voilà</i>, the OS will boot!
+
+
+> ![MacDown logo](RPIpluggedin.JPG) 
+> Caption Picture of RPi connected 
 
 ### 2. Starting at the HomeScreen
-> (Image of Homescreen)
+> ![MacDown logo](RPIDesktop.png)
+
 
 1. From your Raspberry Pi Homescreen, click on the Modules folder, then Module 2.md
 
-> (Small Image of icon)
+> ![MacDown logo](RPiGomakemodulefolder.png)
+
+2. Click on Module2.pdf to access the module and we're off!
 
 
 ### 3. Let's build this thing!
@@ -79,11 +90,13 @@ We're going to now build the unit.
 
 ### A) GPS
 
-a.1) Connect the GPS unit to its antenna 
-> (Image)
+a.1) Connect the GPS unit to its antenna by screwing in the antenna to the gold colored input.
+> ![MacDown logo](GPSAntenna.JPG) 
+> ![MacDown logo](GPSSensorUnit.JPG)
+> ![Macdown logo](GPSconnectedtoAntenna.JPG) 
 
-a.2) Connect the GPS unit to the Grove Pi (Connector A2)
-> (Image of the RPi connecting to GPS)
+a.2) Connect the GPS unit to the Grove Pi (Look for **Connector A2**)
+> ![MacDown logo](GPSUnitPluggedintoGrovePi.JPG)
 
 
 ### that was it! Now let's see if it worked)  
@@ -107,7 +120,8 @@ Try the following
 
 ###B) Temperature Sensor
 b.1) Plug in the Temperature Sensor Unit into the Grove Pi (Connector D7)
-> (Image of Temp Sensor being plugged in)
+> ![Temp Sensor](TemperatureSensorpluggedintoGrovePi.JPG)
+
 
 b.2) Now we've got to prepare the code. We're going copy the following code into your forge, under the Temperature Sensor Tab. 
 
@@ -119,10 +133,12 @@ Enter the code for the temp sensor here
 Step 2. Open up your forge from the desktop if you do not already have it open.
 
 Step 3. Click on the Temperature Sensor tab in the Forge
-> (image of the Temperature sensor Tab)
+> ![MacDown logo](placeholder-400x350.png)
+
 
 Step 4. Paste the code 
-> (image showing code pasted under Temperature Sensor Tab)
+> ![MacDown logo](placeholder-400x350.png)
+
 
 ###Great! Now we're going to test our code to see if the Temperature Sensor is telling us how hot or cold it is
 
@@ -142,8 +158,8 @@ Try the following
 #####If it worked, you can close the 'TEST' terminal and move on to the next step.
 
 ###C) Sound Sensor
-c.1) Plug in the Sound Sensor Unit into the Grove Pi (Connector A0)
-> (Image of Sound Sensor being plugged in)
+c.1) Plug in the Sound Sensor Unit into the Grove Pi (Look for **Connector A0**)
+> ![Sound Sensor being plugged in](SoundSensor_plugged_into_GrovePi.JPG)
 
 b.2) Now we've got to prepare the code. We're going copy the following code into your forge, under the Sound Sensor Tab. 
 
@@ -155,10 +171,12 @@ Enter the code for the sound sensor here
 Step 2. Open up your forge from the desktop if you do not already have it open.
 
 Step 3. Click on the Sound Sensor tab in the Forge
-> (image of the Sound sensor Tab)
+> ![MacDown logo](placeholder-400x350.png)
+
 
 Step 4. Paste the code 
-> (image showing code pasted under Sound Sensor Tab)
+> ![MacDown logo](placeholder-400x350.png)
+
 
 ###Great! Now we're going to test our code to see if the Sound Sensor is picking up noises
 
@@ -179,20 +197,20 @@ Try the following
 
 ###D) LCD RGB Display
 d.1) Plug in the Display Sensor Unit into the Grove Pi (Connector I2C-2)
-> (Image of Sound Sensor being plugged in to I2C-2)
+> ![LCD being plugged into grovepi](LCDPlugged_into_GrovePi.JPG)
 
 d.2) Now we've got to prepare the code, but this time, you're going to type the code manually! The image below contains the exact code to make the Display work - it's your job to type it in and to make it work. Here's how:
 
 Step 1. Open up your forge from the desktop if you do not already have it open.
 
 Step 2. Click on the RGB LCD Display Sensor tab in the Forge
-> (image of the RGB LCD Display sensor Tab)
+> ![MacDown logo](placeholder-400x350.png)
 
 Step 3. Type in the code in the image right below into the RGB LCD Display sensor tab.
-> (image showing code for RGB LCD Display Sensor)
+> ![MacDown logo](placeholder-400x350.png)
 
 Step 4. This is what it will look like when you're done
-> (image of the code in the RGB LCD Display Sensor Tab)
+> ![MacDown logo](placeholder-400x350.png)
 
 ###Excellent work. Now we're going to test to see if the code will active the Dipslay
 
@@ -228,7 +246,7 @@ Try the following
 
 
 
-### 3. Third direction and instruction goes here.
+### 4. Concluding Module 4
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ![MacDown logo](placeholder-400x350.png) 
@@ -246,8 +264,8 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 ### Record Your Thoughts:
 Are there any important experiences or data you want to record for future sessions or later discussion with the team? Write them down.
 
-### Requesting Instructor Feedback:
-Difficulties implementing lorem ipsum? Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+
 
 </xmp>
 
