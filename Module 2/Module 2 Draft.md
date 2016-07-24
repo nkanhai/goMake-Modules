@@ -2,7 +2,7 @@
 <html>
 <title>Hello Strapdown</title>
 
-<xmp theme="cerulean" style="display:none;">
+< xmp theme="cerulean" style="display:none;" >
 
 # Module 2: The Space Computer
 
@@ -246,23 +246,23 @@ Try the following
 
 
 
-### 4. Concluding Module 4
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### 4. Concluding Module 2
+Whoa... You now have a working system that can record environmental data in the stratosphere, as well as transmit the location of your airballoon in real time. Not only did you assemble this yourself, but you coded it and tested it to ensure that the systems were working together. Congratulations, that's pretty awesome. 
+
+You might be asking yourself, <i>once we strap this thing to a high altitude air balloon, how will this computer and its modules manage to stay safe in the stratoshere? Isn't it super cold up there, and won't it just smash to pieces once it comes way back down to earth?</i> 
+
+The answer is quite simple really, we're going to build a **space ship** for the telemetry system to fly in. In the next module, we wil show you how to build a mount for the RPi and Grove pi units, and once the system is solid and mounted, we're going to insert it into its very own safety container. Sure, it's made out of foam and not titanium like the space ships that are flown by NASA, but the mount and payload container will keep all of our sensors in place, as well as provide a snug, warm environment to protect from the stratosphere. 
 
 ![MacDown logo](placeholder-400x350.png) 
 
-## Test Things Out
 
-### Test of first statement:
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+##Let's get to it!
 
-### Test of second statement:
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
 ## Questions & Feedback
 
 ### Record Your Thoughts:
-Are there any important experiences or data you want to record for future sessions or later discussion with the team? Write them down.
+Are there any important experiences or data you want to record for future sessions or later discussion with the team? Discuss with 
 
 
 
