@@ -125,19 +125,24 @@ b.1) Plug in the Temperature Sensor Unit into the Grove Pi (Connector D7)
 b.2) Now we've got to prepare the code. We're going copy the following code into your forge, under the Temperature Sensor Tab. 
 
 Step 1. Highlight and then copy this text.
+
 ```
-Enter the code for the temp sensor here
+			analogValue = grovepi.analogRead(self.pin)
+			temperature = (5.0 * analogValue * 100.0) / 1024
+			return temperature
 ```
+
 
 Step 2. Open up your forge from the desktop if you do not already have it open.
 
 Step 3. Click on the Temperature Sensor tab in the Forge
-> ![MacDown logo](placeholder-400x350.png)
+> ![TemperatureSensorCodeNotPasted](TemperatureSensorCodeNotPasted.png)
 
 
 Step 4. Paste the code 
-> ![MacDown logo](placeholder-400x350.png)
+> ![TemperatureSensorCodePasted](TemperatureSensorCodePasted.png)
 
+** Make sure that the code pasted in lines 23 - 25 are properly indented as shown in the screenshot **
 
 ###Great! Now we're going to test our code to see if the Temperature Sensor is telling us how hot or cold it is
 
@@ -163,18 +168,20 @@ c.1) Plug in the Sound Sensor Unit into the Grove Pi (Look for **Connector A0**)
 b.2) Now we've got to prepare the code. We're going copy the following code into your forge, under the Sound Sensor Tab. 
 
 Step 1. Highlight and then copy this text.
+
 ```
-Enter the code for the sound sensor here
+			analogValue = grovepi.analogRead(self.pin)
+			return str(analogValue)
 ```
 
 Step 2. Open up your forge from the desktop if you do not already have it open.
 
 Step 3. Click on the Sound Sensor tab in the Forge
-> ![MacDown logo](placeholder-400x350.png)
+> ![MacDown logo](SoundSensorCodeNotPasted.png)
 
 
 Step 4. Paste the code 
-> ![MacDown logo](placeholder-400x350.png)
+> ![MacDown logo](SoundSensorCodePasted.png)
 
 
 ###Great! Now we're going to test our code to see if the Sound Sensor is picking up noises
@@ -203,17 +210,17 @@ d.2) Now we've got to prepare the code, but this time, you're going to type the 
 Step 1. Open up your forge from the desktop if you do not already have it open.
 
 Step 2. Click on the RGB LCD Display Sensor tab in the Forge
-> ![MacDown logo](placeholder-400x350.png)
+> ![MacDown logo](LcdRgbWithoutCode.png)
 
 Step 3. Type in the code in the image right below into the RGB LCD Display sensor tab.
-> ![MacDown logo](placeholder-400x350.png)
+> ![MacDown logo](LcdRgbCode.png)
 
 Step 4. This is what it will look like when you're done
-> ![MacDown logo](placeholder-400x350.png)
+> ![MacDown logo](LcdRgbWithCode.png)
 
 ###Excellent work. Now we're going to test to see if the code will active the Dipslay
 
-d.3) Run the 'Test' Icon from your desktop. This will run the code in a terminal window, and will active the Display showing the text 'Hello World'.
+d.3) Run the 'Test' Icon from your desktop. This will run the code in a terminal window, and will active the Display showing the text 'Hello Universe'.
 
 ####What else can we show on this display?
 Instead of just saying Hello World, we're going to have this display show us temperature data that the Temperature Sensor is providing. 
@@ -224,16 +231,11 @@ Instead of just saying Hello World, we're going to have this display show us tem
 
 > Step 2. From within this tab, locate line #5, and alter the following code from:
 
-> ```
-> message = “Hello World:” 
-> ```
-> 
+> ![](LcdTemperatureOutputBefore.png)
 Step 3. to this:
 
-> ```
-> message = “temp (C):” + temperatureData
-> ```
-
+> ![](LcdTemperatureOutputAfter.png)
+> 
 ### What if it didn't work?
 
 Try the following
@@ -252,10 +254,10 @@ You might be asking yourself, <i>once we strap this thing to a high altitude air
 
 The answer is quite simple really, we're going to build a **space ship** for the telemetry system to fly in. In the next module, we wil show you how to build a mount for the RPi and Grove pi units, and once the system is solid and mounted, we're going to insert it into its very own safety container. Sure, it's made out of foam and not titanium like the space ships that are flown by NASA, but the mount and payload container will keep all of our sensors in place, as well as provide a snug, warm environment to protect from the stratosphere. 
 
-![MacDown logo](placeholder-400x350.png) 
+![](PayloadContainerInside.jpg)
 
 
-##Let's get to it!
+### On to Module 3!
 
 
 ## Questions & Feedback
