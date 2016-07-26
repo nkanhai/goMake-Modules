@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html>
 <title>Hello Strapdown</title>
 
-< xmp theme="cerulean" style="display:none;" >
+<xmp theme="cerulean">
 
 # Module 2: The Space Computer
 
@@ -265,9 +264,6 @@ The answer is quite simple really, we're going to build a **space ship** for the
 Are there any important experiences or data you want to record for future sessions or later discussion with the team? Discuss with 
 
 
-
-
 </xmp>
-
 <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
 </html>
